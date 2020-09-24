@@ -164,11 +164,52 @@
     &__items{
         display: flex;
         flex-wrap: wrap;
+        padding-left: 25px;
     }
     &__item{
         margin-bottom: 100px;
         display: flex;
         align-items: flex-end;
+        &:nth-child(even){
+            margin-left: 40px;
+            transform: translateY(25px);
+        }
+    }
+    &__item-1,
+    &__item-3{
+        position: relative;
+        &::before,
+        &::after{
+         content: '';
+         position: absolute;
+         background-repeat: no-repeat;
+        background-position: 0 0;
+        }
+    }
+    &__item-1{
+        &::before{
+            height: 48px;
+            width: 245px;
+            background-image: url('../images/line-1svg.svg');
+            right: -56px;
+            top:  31px;
+        }
+    }
+    &__item-3{
+        &::before{
+            width: 254px;
+            height: 39px;
+            background-image: url('../images/line-3.svg');
+            top:50px;
+            right: -55px;
+        }
+        &::after{
+            background-image: url('../images/line-2.svg');
+            top:-70px;
+            right: -54px;
+            width: 463px;
+            height: 62px;
+        }
     }
     &__num{
         font-size: 36px;
@@ -193,15 +234,21 @@
     &__info{
         width: 300px;
     }
-    &__info-title{
-        width: 137px;
-        font-size: 121px;
+    .info-title{
+        width: 123px;
+        font-size: 21px;
         line-height: 24px;
         @extend %ubuntu-bold;
         margin-bottom: 10px;
     }
+    &__info-text{
+        font-size: 15px;
+        line-height: 18px;
+    }
+
 }
 
+ 
 
 
 @import "media";
