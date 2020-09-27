@@ -271,6 +271,8 @@
         &::before{
             content: '';
             position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
         }
     }
     &__box-2{
@@ -281,18 +283,30 @@
     }
     &__box-1::before{
         background-image: url('../images/pointer-1.svg');
+        width: 229px;
+        height: 114px;
+        right: 0;
 
     }
     &__box-2::before{
-        background-image: url('../images/pointer-1.svg');
+        background-image: url('../images/pointer-2.svg');
+        width: 346px;
+        height: 81px;
+        right: 0;
 
     }
     &__box-3::before{
-        background-image: url('../images/pointer-1.svg');
+        background-image: url('../images/pointer-3.svg');
+        width: 258px;
+         height:103px;
+         left: 0;
 
     }
     &__box-4::before{
-        background-image: url('../images/pointer-1.svg');
+        background-image: url('../images/pointer-4.svg');
+        width: 124px;
+        height: 89px;
+        left: 0;
         
     }
     &__box-title{
