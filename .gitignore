@@ -1,6 +1,7 @@
 # Object file
 *.o
 node_modules
+balanced-match
 
 # Ada Library Information
 *.ali
